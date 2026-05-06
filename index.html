@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>第38回社会福祉士国家試験 完全攻略LP｜50点合格と0点足切り対策</title>
+  <meta name="description" content="第38回社会福祉士国家試験のデータから導く、満点不要・0点足切り回避・基礎と事例に集中するための戦略的学習ロードマップ。動画・音声・PDF資料を1ページに統合。" />
+  <style>
+    :root{
+      --bg:#07111f;
+      --bg2:#0d1b2e;
+      --navy:#101d35;
+      --red:#e61515;
+      --deep-red:#a60d13;
+      --yellow:#ffe500;
+      --gold:#f6c744;
+      --white:#f7f7fb;
+      --muted:#bac5d6;
+      --line:rgba(255,255,255,.16);
+      --glass:rgba(7,14,26,.72);
+      --shadow:0 30px 80px rgba(0,0,0,.45);
+      --radius:24px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--white);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Yu Gothic", "Yu Gothic UI", Meiryo, sans-serif;
+      background:
+        radial-gradient(circle at 18% 10%, rgba(235,20,20,.22), transparent 28%),
+        radial-gradient(circle at 82% 18%, rgba(255,229,0,.12), transparent 28%),
+        linear-gradient(180deg,#060b12 0%, #081627 38%, #05070b 100%);
+      overflow-x:hidden;
+      line-height:1.8;
+    }
+    a{color:inherit;text-decoration:none}
+    img,video,iframe{max-width:100%}
+    .noise:before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.08;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.38'/%3E%3C/svg%3E");
+      z-index:50;
+    }
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:20;
+      backdrop-filter:blur(16px);
+      background:rgba(6,12,22,.78);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      width:min(1180px,92vw);
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      padding:12px 0;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:900;
+      letter-spacing:.02em;
+      white-space:nowrap;
+    }
+    .brand-badge{
+      width:34px;height:34px;border-radius:10px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--red),#ff5a20);
+      box-shadow:0 10px 26px rgba(230,21,21,.45);
+      font-weight:1000;
+    }
+    .navlinks{display:flex;gap:12px;align-items:center;font-size:14px;color:#dbe5f3}
+    .navlinks a{padding:8px 10px;border-radius:999px;border:1px solid transparent}
+    .navlinks a:hover{border-color:var(--line);background:rgba(255,255,255,.05)}
+    .cta-mini{
+      background:linear-gradient(135deg,var(--yellow),#ffad00);
+      color:#1b1300!important;
+      font-weight:900;
+      border:0!important;
+      box-shadow:0 12px 28px rgba(255,229,0,.25);
+    }
+    .hero{
+      position:relative;
+      min-height:88vh;
+      display:grid;
+      place-items:center;
+      padding:72px 0 56px;
+      isolation:isolate;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(90deg,rgba(0,0,0,.95) 0%, rgba(0,0,0,.62) 42%, rgba(0,0,0,.32) 100%),
+        url('hero.png') center/cover no-repeat;
+      z-index:-2;
+      filter:saturate(1.12) contrast(1.06);
+    }
+    .hero:after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0 0;
+      height:220px;
+      background:linear-gradient(180deg,transparent,var(--bg));
+      z-index:-1;
+    }
+    .container{width:min(1180px,92vw);margin:auto}
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.02fr .98fr;
+      gap:42px;
+      align-items:center;
+    }
+    .eyebrow{
+      display:inline-flex;
+      gap:9px;
+      align-items:center;
+      padding:8px 14px;
+      border:1px solid rgba(255,255,255,.25);
+      background:rgba(255,255,255,.08);
+      border-radius:999px;
+      color:#fff;
+      font-weight:800;
+      backdrop-filter:blur(10px);
+      box-shadow:0 10px 30px rgba(0,0,0,.18);
+    }
+    .blink{width:10px;height:10px;border-radius:999px;background:var(--red);box-shadow:0 0 0 8px rgba(230,21,21,.18);animation:pulse 1.7s infinite}
+    @keyframes pulse{50%{transform:scale(1.22);opacity:.65}}
+    h1{
+      margin:22px 0 18px;
+      font-size:clamp(42px,6.6vw,88px);
+      line-height:1.02;
+      letter-spacing:-.055em;
+      font-weight:1000;
+      text-shadow:0 8px 0 rgba(0,0,0,.45), 0 0 34px rgba(230,21,21,.18);
+    }
+    .marker{
+      display:inline-block;
+      color:var(--yellow);
+      -webkit-text-stroke:2px var(--red);
+      text-shadow:0 5px 0 #6d0000, 0 0 30px rgba(255,229,0,.28);
+    }
+    .hero-lead{
+      font-size:clamp(18px,2.2vw,25px);
+      font-weight:850;
+      max-width:760px;
+      color:#f2f6ff;
+      text-shadow:0 3px 14px rgba(0,0,0,.72);
+    }
+    .hero-copy{color:#d7e1ef;max-width:720px;font-size:16px}
+    .action-row{display:flex;flex-wrap:wrap;gap:14px;margin:28px 0 0}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:52px;
+      padding:13px 20px;
+      border-radius:999px;
+      font-weight:1000;
+      border:1px solid var(--line);
+      box-shadow:0 18px 42px rgba(0,0,0,.25);
+      transition:.18s ease;
+    }
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+    .btn-primary{background:linear-gradient(135deg,var(--yellow),#ff9900);color:#161000;border:0}
+    .btn-danger{background:linear-gradient(135deg,var(--red),#ff5e19);color:#fff;border:0}
+    .btn-ghost{background:rgba(255,255,255,.08);color:#fff;backdrop-filter:blur(10px)}
+    .hero-panel{
+      background:linear-gradient(180deg,rgba(8,16,30,.83),rgba(6,10,18,.65));
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:30px;
+      padding:22px;
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(18px);
+    }
+    .hero-panel img{border-radius:22px;box-shadow:0 24px 70px rgba(0,0,0,.46);display:block}
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+      margin-top:14px;
+    }
+    .stat{
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:18px;
+      padding:14px;
+      background:rgba(255,255,255,.06);
+      text-align:center;
+    }
+    .stat .num{font-size:clamp(28px,4vw,44px);line-height:1;font-weight:1000;color:var(--yellow);text-shadow:0 0 18px rgba(255,229,0,.25)}
+    .stat .label{font-size:12px;color:#c9d5e6;font-weight:800;margin-top:7px}
+    section{padding:88px 0;position:relative}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:32px}
+    .kicker{color:var(--gold);font-weight:1000;letter-spacing:.12em;text-transform:uppercase;font-size:13px}
+    h2{font-size:clamp(30px,4.6vw,56px);line-height:1.15;margin:8px 0 0;letter-spacing:-.035em}
+    .section-lead{max-width:620px;color:#cfd9e8;font-weight:650}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035));
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:var(--radius);
+      padding:24px;
+      box-shadow:0 20px 58px rgba(0,0,0,.25);
+      overflow:hidden;
+      position:relative;
+    }
+    .card:before{
+      content:"";position:absolute;inset:0 0 auto 0;height:4px;
+      background:linear-gradient(90deg,var(--red),var(--yellow),transparent);
+      opacity:.95;
+    }
+    .card h3{font-size:24px;line-height:1.3;margin:8px 0 10px}
+    .card p{color:#ccd7e8;margin:0}
+    .icon{
+      width:48px;height:48px;border-radius:15px;
+      display:grid;place-items:center;
+      font-size:27px;
+      background:rgba(255,255,255,.09);
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .danger-section{
+      background:
+        radial-gradient(circle at 50% 0%, rgba(230,21,21,.25), transparent 34%),
+        linear-gradient(180deg,rgba(122,0,0,.16),rgba(6,11,18,.2));
+      border-top:1px solid rgba(255,255,255,.08);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .bridge{
+      display:grid;
+      grid-template-columns:repeat(6,1fr);
+      gap:10px;
+      margin-top:26px;
+    }
+    .pillar{
+      min-height:150px;
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:18px;
+      padding:14px 10px;
+      background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));
+      text-align:center;
+      position:relative;
+    }
+    .pillar .zero{
+      width:44px;height:44px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;
+      background:#182640;border:1px solid rgba(255,255,255,.18);font-weight:1000;
+    }
+    .pillar.danger{background:linear-gradient(180deg,rgba(230,21,21,.5),rgba(72,0,0,.28));transform:translateY(16px);box-shadow:0 0 36px rgba(230,21,21,.32)}
+    .pillar small{display:block;color:#cbd7e8;font-weight:800;line-height:1.4}
+    .pill-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .pill{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);padding:8px 12px;border-radius:999px;font-weight:850;color:#e9f0fb;font-size:14px}
+    .yellow-line{color:var(--yellow);font-weight:1000}
+    .timeline{display:grid;gap:16px;counter-reset:phase}
+    .phase{display:grid;grid-template-columns:76px 1fr;gap:18px;align-items:start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:24px;padding:20px}
+    .phase:before{counter-increment:phase;content:counter(phase);width:64px;height:64px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--red),#ff9b00);color:#fff;font-size:32px;font-weight:1000;box-shadow:0 18px 40px rgba(230,21,21,.25)}
+    .phase h3{margin:0 0 6px;font-size:22px}.phase p{margin:0;color:#ced8e7}
+    .media-box{background:#02060c;border:1px solid rgba(255,255,255,.14);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+    .media-box video{display:block;width:100%;background:#000}
+    .audio-card{padding:24px;background:linear-gradient(135deg,rgba(230,21,21,.18),rgba(255,229,0,.08));border-radius:26px;border:1px solid rgba(255,255,255,.14)}
+    audio{width:100%;margin-top:12px}
+    .pdf-tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+    .tab{
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.07);
+      color:#eef5ff;
+      padding:10px 13px;
+      border-radius:999px;
+      font-weight:900;
+      cursor:pointer;
+    }
+    .tab.active{background:linear-gradient(135deg,var(--yellow),#ffb300);color:#211500;border-color:transparent}
+    .pdf-viewer{height:78vh;min-height:620px;border:1px solid rgba(255,255,255,.18);border-radius:24px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+    .pdf-viewer iframe{width:100%;height:100%;border:0;background:#fff}
+    .pdf-links{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .download-link{border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(255,255,255,.06);padding:14px;font-weight:850;color:#eaf1fb}
+    .download-link span{display:block;color:#aebbd0;font-size:12px;margin-top:4px;font-weight:700}
+    .cta-band{
+      padding:54px;
+      border-radius:34px;
+      background:
+        linear-gradient(135deg,rgba(230,21,21,.92),rgba(255,153,0,.82)),
+        radial-gradient(circle at top right,rgba(255,255,255,.28),transparent 36%);
+      color:#fff;
+      box-shadow:0 36px 90px rgba(230,21,21,.26);
+      overflow:hidden;
+      position:relative;
+    }
+    .cta-band h2{font-size:clamp(34px,5vw,64px)}
+    .cta-band p{font-weight:850;max-width:820px;font-size:18px}
+    .notice{font-size:13px;color:#aab7ca;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;margin-top:22px}
+    footer{padding:42px 0;color:#8f9eb5;text-align:center;border-top:1px solid rgba(255,255,255,.08)}
+    .float-warning{
+      position:absolute;right:5vw;top:8%;width:88px;height:88px;border-radius:20px;background:linear-gradient(135deg,var(--red),#ff6721);display:grid;place-items:center;font-size:58px;font-weight:1000;box-shadow:0 22px 60px rgba(230,21,21,.36);animation:shake 3.5s infinite;
+    }
+    @keyframes shake{0%,92%,100%{transform:rotate(0)}94%{transform:rotate(4deg)}96%{transform:rotate(-4deg)}}
+    .mobile-only{display:none}
+    @media(max-width:940px){
+      .hero-grid,.grid-2,.grid-3{grid-template-columns:1fr}
+      .hero{min-height:auto;padding-top:44px}
+      .section-head{display:block}
+      .navlinks{display:none}.mobile-only{display:inline-flex}
+      .bridge{grid-template-columns:repeat(2,1fr)}
+      .pdf-links{grid-template-columns:1fr}
+      .pdf-viewer{height:70vh;min-height:460px}
+      .stats{grid-template-columns:1fr}
+      .float-warning{display:none}
+      .cta-band{padding:30px}
+    }
+  </style>
+</head>
+<body class="noise">
+  <header class="topbar">
+    <nav class="nav" aria-label="ページ内ナビゲーション">
+      <a class="brand" href="#top"><span class="brand-badge">福</span><span>社会福祉士国試｜戦略攻略LP</span></a>
+      <div class="navlinks">
+        <a href="#truth">50点の真実</a>
+        <a href="#risk">0点足切り</a>
+        <a href="#keywords">重要キーワード</a>
+        <a href="#media">動画・音声</a>
+        <a href="#pdf" class="cta-mini">PDF資料を見る</a>
+      </div>
+      <a class="btn btn-primary mobile-only" href="#media">見る</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="float-warning">!</div>
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="blink"></span>【速報】第38回社会福祉士国家試験 分析</div>
+          <h1><span class="marker">50点で合格!?</span><br>満点を捨てて、<br>合格を拾いに行く。</h1>
+          <p class="hero-lead">129点満点中、合格ラインは50点。得点率38.7％。しかし本当に怖いのは、総得点ではなく「0点足切り」です。</p>
+          <p class="hero-copy">19科目を丸暗記する時代から、6科目群を守り抜く時代へ。基礎・事例・最新制度を結びつけ、最短距離で合格可能性を高めるための学習LPです。</p>
+          <div class="action-row">
+            <a class="btn btn-primary" href="#media">▶ まず動画で全体像を見る</a>
+            <a class="btn btn-danger" href="#risk">⚠ 0点足切り対策を見る</a>
+            <a class="btn btn-ghost" href="#pdf">📄 PDF資料を開く</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="キービジュアル">
+          <img src="hero.png" alt="第38回社会福祉士国家試験 50点で合格 38.7パーセント 0点の罠" />
+          <div class="stats">
+            <div class="stat"><div class="num">129</div><div class="label">満点</div></div>
+            <div class="stat"><div class="num">50</div><div class="label">合格ライン</div></div>
+            <div class="stat"><div class="num">38.7%</div><div class="label">得点率</div></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="truth">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">THE TRUTH</div>
+            <h2>この試験は「高得点勝負」ではない。<br>まず、ゲームのルールを変える。</h2>
+          </div>
+          <p class="section-lead">第38回のデータが示すのは、満点主義からの脱却です。難問に飲み込まれるより、基礎を確実に拾い、全科目群で穴を作らない学習へ切り替えます。</p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><div class="icon">🎯</div><h3>満点不要</h3><p>誰も解けない難問を追いかけない。まずは合格に必要な基礎知識を、確実に得点へ変える設計にします。</p></article>
+          <article class="card"><div class="icon">🛡️</div><h3>全群ディフェンス</h3><p>得意科目だけで稼ぐ発想は危険。6科目群すべてで最低限の得点を死守するリスク管理が合否を分けます。</p></article>
+          <article class="card"><div class="icon">🔗</div><h3>科目をつなぐ</h3><p>医学・心理・社会・制度を別々に覚えず、「1人の人間の物語」として横断的に理解します。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="risk" class="danger-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">ZERO CUT RISK</div>
+            <h2>絶対に避けるべき<br><span class="yellow-line">「0点」の罠。</span></h2>
+          </div>
+          <p class="section-lead">どれだけ総得点が高くても、1つの科目群で0点を取れば不合格。だから合格戦略の最優先は「苦手をゼロにしない」ことです。</p>
+        </div>
+        <div class="bridge" aria-label="6科目群の足切りリスク">
+          <div class="pillar"><div class="zero">1</div><small>人体・心理・社会</small></div>
+          <div class="pillar"><div class="zero">2</div><small>制度・政策</small></div>
+          <div class="pillar"><div class="zero">3</div><small>相談援助</small></div>
+          <div class="pillar"><div class="zero">4</div><small>地域・権利</small></div>
+          <div class="pillar danger"><div class="zero">0</div><small>第5群<br>高齢・児童・貧困・保健</small></div>
+          <div class="pillar"><div class="zero">6</div><small>その他専門領域</small></div>
+        </div>
+        <div class="pill-list">
+          <span class="pill">第5群は最大ボトルネック</span>
+          <span class="pill">1点を死守する防御策</span>
+          <span class="pill">苦手科目を丸ごと捨てない</span>
+          <span class="pill">「2つ選べ」は根拠選択が必須</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="keywords">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">KEYWORDS</div>
+            <h2>合否を分けるのは、<br>最新制度と基礎概念の結びつけ。</h2>
+          </div>
+          <p class="section-lead">暗記した言葉を、事例問題の中で使える知識へ変換します。重要語句は「説明できる」「事例に当てはめられる」状態を目指します。</p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><div class="icon">🧠</div><h3>SOC<br>首尾一貫感覚</h3><p>把握可能感・処理可能感・有意味感。本人の根性ではなく、制度や人など外部資源も含めて支援を捉えます。</p></article>
+          <article class="card"><div class="icon">🌊</div><h3>デュルケーム<br>自殺論</h3><p>アノミー的自殺は不況だけでなく、急激な好景気でも増加し得る。社会構造から個人の苦悩を見る視点が重要です。</p></article>
+          <article class="card"><div class="icon">🍞</div><h3>スピーナムランド制度</h3><p>善意の賃金補助が、賃金低下や救貧税増大という意図せぬ結果を招いた歴史的教訓を押さえます。</p></article>
+          <article class="card"><div class="icon">♿</div><h3>ノーマライゼーション</h3><p>ニィリエ、バンク＝ミケルセン、ヴォルフェンスベルガー。人物名とキーワードのすり替え問題に注意します。</p></article>
+          <article class="card"><div class="icon">⚖️</div><h3>法律・時事</h3><p>孤独・孤立対策推進法、医療的ケア児支援法など、制度の目的・義務・対象をグラデーションで整理します。</p></article>
+          <article class="card"><div class="icon">✅</div><h3>「2つ選べ」対策</h3><p>曖昧な消去法では崩れやすい形式。過去問で、根拠を持って2つを選び切る訓練を行います。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="danger-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">ROADMAP</div>
+            <h2>劇的突破のための<br>3ステップ・ロードマップ。</h2>
+          </div>
+          <p class="section-lead">「全部覚える」から「落とさない設計」へ。受験生が今日から動ける学習順序に落とし込みます。</p>
+        </div>
+        <div class="timeline">
+          <div class="phase"><div><h3>導入期：50点の壁と0点の恐怖を知る</h3><p>合格ラインの現実を理解して、完璧主義を手放す。同時に足切りだけは絶対に避ける意識を作ります。</p></div></div>
+          <div class="phase"><div><h3>基礎期：6科目群すべてで1点を死守</h3><p>第5群を中心に、苦手領域を丸ごと捨てず、最低限の得点源を配置します。基礎問題を優先します。</p></div></div>
+          <div class="phase"><div><h3>実践期：事例・制度・理論をつなぐ</h3><p>SOC、社会的包摂、権利擁護、医療・児童・高齢などを事例問題で横断。根拠を持って選ぶ練習へ進みます。</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="media">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">VIDEO & AUDIO</div>
+            <h2>動画と音声で、<br>まず全体像を一気につかむ。</h2>
+          </div>
+          <p class="section-lead">文字資料に入る前に、動画・音声で試験の構造をつかむ構成です。LP内でそのまま再生できます。</p>
+        </div>
+        <div class="grid-2">
+          <div class="media-box">
+            <video src="exam_strategy.mp4" poster="hero.png" controls playsinline preload="metadata"></video>
+          </div>
+          <div class="audio-card">
+            <div class="kicker">AUDIO GUIDE</div>
+            <h3 style="font-size:32px;margin:8px 0 4px;line-height:1.25">50点で合格する社会福祉士試験の戦略</h3>
+            <p style="color:#d8e3f2;margin:0">移動中・作業中でも、合格ライン、0点足切り、第5群、重要キーワードを音声で復習できます。</p>
+            <audio src="exam_audio.m4a" controls preload="metadata"></audio>
+            <div class="action-row">
+              <a class="btn btn-primary" href="exam_strategy.mp4" download>動画をダウンロード</a>
+              <a class="btn btn-ghost" href="exam_audio.m4a" download>音声をダウンロード</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pdf" class="danger-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">PDF LIBRARY</div>
+            <h2>PDF資料を1ページに統合。<br>その場で読める・配れる・保存できる。</h2>
+          </div>
+          <p class="section-lead">完全攻略資料、問題・正答一覧、文字起こし、YouTube台本をまとめて閲覧できます。講座資料・受験支援ページとしてそのまま利用できます。</p>
+        </div>
+
+        <div class="pdf-tabs" role="tablist" aria-label="PDF資料切り替え">
+          <button class="tab active" data-pdf="complete_guide.pdf">完全攻略</button>
+          <button class="tab" data-pdf="question_answer_list.pdf">問題・正答一覧</button>
+          <button class="tab" data-pdf="transcript_50.pdf">50点戦略 文字起こし</button>
+          <button class="tab" data-pdf="transcript_strategy.pdf">攻略法 文字起こし</button>
+          <button class="tab" data-pdf="script_complete.pdf">完全攻略スクリプト</button>
+          <button class="tab" data-pdf="script_monologue.pdf">モノローグ台本</button>
+          <button class="tab" data-pdf="script_data.pdf">データ分析台本</button>
+        </div>
+        <div class="pdf-viewer">
+          <iframe id="pdfFrame" src="complete_guide.pdf" title="PDF資料ビューア"></iframe>
+        </div>
+        <div class="pdf-links">
+          <a class="download-link" href="complete_guide.pdf" download>完全攻略PDF<span>第38回試験の全体像とロードマップ</span></a>
+          <a class="download-link" href="question_answer_list.pdf" download>問題・正答・科目詳細一覧<span>出題内容とキーワード確認用</span></a>
+          <a class="download-link" href="transcript_50.pdf" download>50点戦略 文字起こし<span>音声内容を文章で確認</span></a>
+          <a class="download-link" href="transcript_strategy.pdf" download>攻略法 文字起こし<span>動画内容を文章で確認</span></a>
+          <a class="download-link" href="script_complete.pdf" download>完全攻略スクリプト<span>動画化・講座化に使える台本</span></a>
+          <a class="download-link" href="script_monologue.pdf" download>女性YouTuber台本<span>一人語り形式の構成</span></a>
+          <a class="download-link" href="script_data.pdf" download>データ分析台本<span>出題キーワード解説用</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-band">
+          <div class="kicker" style="color:#fff3a8">FINAL MESSAGE</div>
+          <h2>暗記地獄から、<br>戦略的サバイバルへ。</h2>
+          <p>社会福祉士試験は、19科目を完璧に覚える試験ではありません。目の前の人を多角的に理解し、必要な制度・支援・専門職につなぐための視点を問う試験です。満点ではなく、基礎と事例をつなぐ。0点を避ける。これが合格への最短ルートです。</p>
+          <div class="action-row">
+            <a class="btn btn-primary" href="#media">動画で学習を始める</a>
+            <a class="btn btn-ghost" href="#pdf">PDF資料を開く</a>
+          </div>
+          <p class="notice">※本ページは第38回社会福祉士国家試験に関する提供資料をもとにした学習支援ページです。実際の合格基準・制度・試験範囲は年度により変動するため、受験時には必ず最新の公式情報も確認してください。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 社会福祉士国家試験 戦略攻略LP / Data-Driven Study Support</div>
+  </footer>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const frame = document.getElementById('pdfFrame');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        frame.src = tab.dataset.pdf;
+      });
+    });
+  </script>
+</body>
+</html>
